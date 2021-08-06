@@ -26,7 +26,7 @@ Base on jquery 3.6.0 + jquery UI 1.12.1 + bootstrap 3.3.7
 HTML
 
 ```HTML
-	<div class="container">
+<div class="container">
      	<div class="row">
             <div class="col-md-3">
                 <div id="toc"></div>
@@ -57,7 +57,7 @@ HTML
 JS
 
 ```javascript
- 		var toc = $('#toc').tocify({
+var toc = $('#toc').tocify({
             context: "#content", // jquerySelector - The container element to generate the table of contents
             // 	default = "body"
             selectors: "h1,h2,h3,h4,h5", // The element's used to generate TOC. The order is important.
@@ -67,3 +67,14 @@ JS
 
 ```
 
+## Demo
+
+- demos/default_2021.html : Demo 2021
+
+- demos/default-document.html: Demo old + detail doc
+
+  
+
+## Source
+
+- src/
