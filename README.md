@@ -9,6 +9,7 @@ Base on jquery 3.6.0 + jquery UI 1.12.1 + bootstrap 3.3.7
 ```HTML
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="libs/jqueryui/jquery-ui.min.css">
+
 <link href="../src/stylesheets/jquery.tocify.css" rel="stylesheet">
 ```
 
@@ -18,6 +19,7 @@ Base on jquery 3.6.0 + jquery UI 1.12.1 + bootstrap 3.3.7
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="../libs/jqueryui/jquery-ui.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
 <script src="../src/javascripts/jquery.tocify.js"></script>
 ```
 
