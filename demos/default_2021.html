@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/jqueryui/jquery-ui.min.css">
+    <link href="../src/stylesheets/jquery.tocify.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .headerDoc {
+            color: #005580;
+        }
+
+        #toc {
+            margin: 0px 0px 20px 0px;
+            position: fixed;
+            left: 50px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-md-3">
+            <div id="toc">
+
+            </div>
+        </div>
+        <div class="col col-md-9">
+            <div id="content">
+                <h1>Chapter 1: ....</h1>
+                <h2>1st Problem</h2>
+                <h3>Solution A</h3>
+                <h3>Solution B</h3>
+                <h3>Solution C</h3>
+
+                <h2>2nd Problem</h2>
+                <h3>Solution D</h3>
+                <h3>Solution E</h3>
+
+                <h1>Chapter 2: ....</h1>
+                <h2>1st Problem</h2>
+                <h3>Solution F</h3>
+                <h3>Solution G</h3>
+                <h3>Solution H</h3>
+
+
+                <h1>Khái niệm cơ bản</h1>
+                <h2>Kênh</h2>
+                <p>Kênh (channel) đại diện cho thương hiệu của cá nhân hoặc tổ chưc trên nền tảng Realtimes. Một kênh có
+                    thể
+                    được
+                    phát triển bởi nhiều tài khoản cá nhân khác nhau với các vai trò (role) khác nhau như quản lý
+                    (manager),
+                    biên
+                    tập viên (editor).</p>
+                <p>Ví dụ: Khi bạn tạo 1 phòng streaming hoặc tạo 1 đề thi thì những tài nguyên này sẽ xuất hiện cùng với
+                    logo và
+                    tên
+                    kênh của bạn.</p>
+                <p>&nbsp;</p>
+                <h2>Tài nguyên thuộc kênh</h2>
+                <ul>
+                    <li>Phòng</li>
+                    <li>Câu hỏi</li>
+                    <li>Đề thi</li>
+                    <li>Biểu mẫu</li>
+                    <li>Sơ đồ tri thức: Mindmap</li>
+                    <li>Báo cáo phân tích dữ liệu</li>
+
+                </ul>
+                <p>&nbsp;</p>
+                <h1>Quản lý kênh</h1>
+                <h3>Thay đổi thông tin</h3>
+                <h3>Thêm/bớt người quản lý</h3>
+                <h3>Thêm/ Xóa biên tập viên</h3>
+                <h3>Thay đổi vai trò</h3>
+                <p>&nbsp;</p>
+                <h1>Phòng</h1>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+
+
+    </div>
+</div><!--/.fluid-container-->
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../libs/jqueryui/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../src/javascripts/jquery.tocify.js"></script>
+
+
+<script>
+    $(function () {
+        var toc = $('#toc').tocify({
+            context: "#content", // jquerySelector - The container element to generate the table of contents
+            // 	default = "body"
+
+            selectors: "h1,h2,h3,h4,h5", // The element's used to generate TOC. The order is important.
+            ignoreSelector: "", // A selector to any element that would be matched by selectors that you wish to be ignored
+        }).data("toc-tocify");
+    });
+</script>
+
+</body>
+</html>
